@@ -24,14 +24,4 @@ node {
 				echo "Pushing to docker hub"
 	}
 }
-post{
-	failure{
-		mail to: '19mcme24@uohyd.ac.in',
-			subject: "Pipeline has failed: ${currentBuild.fullDisplayName}",
-			body: "Error occurred in ${env.BUILD_URL}"
-		}
 
-	success{
-		message: "The pipeline ${currentBuild.fullDisplayName} has been completed successfully."
-	}
-}
