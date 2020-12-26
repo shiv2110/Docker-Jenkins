@@ -28,7 +28,7 @@ post{
 	failure{
 		mail to: '19mcme24@uohyd.ac.in',
 			subject: "Pipeline has failed: ${currentBuild.fullDisplayName}",
-			body: "Error occurred in ${env.BUILD_URL}
+			body: "Error occurred in ${env.BUILD_URL}"
 		}
 
 	success{
