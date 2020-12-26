@@ -32,7 +32,6 @@ post{
 		}
 
 	success{
-		color: 'green',
-      		message: "The pipeline ${currentBuild.fullDisplayName} has been completed successfully."
+		message: "The pipeline ${currentBuild.fullDisplayName} has been completed successfully."
 	}
 }
